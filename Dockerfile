@@ -8,8 +8,6 @@ COPY qt5ct/colors/Dracula.conf /root/.config/qt5ct/colors/Dracula.conf
 RUN echo "export QT_QPA_PLATFORMTHEME=qt5ct" >> /root/.bashrc
 
 # common commands added to history
-RUN echo "ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true" \
-	>> /root/.bash_history
 RUN echo "ros2 launch turbopi_ros gamepad.launch.py" \
         >> /root/.bash_history
 RUN echo "rm -r build; colcon build --symlink-install --packages-select  turbopi_ros" \
