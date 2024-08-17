@@ -21,4 +21,5 @@ RUN echo "rm -r build; colcon build --symlink-install --packages-select  turbopi
 RUN echo "rviz2 -d src/turbopi_ros/config/turbopi.rviz" \
 	>> /root/.bash_history
 RUN echo "ros2 launch turbopi_ros ign_gazebo.launch.py" \
+	custom:=False world:=playground \
 	>> /root/.bash_history
