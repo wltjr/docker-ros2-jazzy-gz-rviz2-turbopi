@@ -14,12 +14,4 @@ RUN echo 'export GZ_SIM_RESOURCE_PATH=${GAZEBO_MODEL_PATH}:${GZ_SIM_RESOURCE_PAT
 	>> /root/.bashrc
 
 # common commands added to history
-RUN echo "ros2 launch turbopi_ros gamepad.launch.py" \
-        >> /root/.bash_history
-RUN echo "rm -r build; colcon build --symlink-install --packages-select  turbopi_ros" \
-        >> /root/.bash_history
-RUN echo "rviz2 -d src/turbopi_ros/config/turbopi.rviz" \
-	>> /root/.bash_history
-RUN echo "ros2 launch turbopi_ros ign_gazebo.launch.py" \
-	custom:=False world:=playground \
-	>> /root/.bash_history
+COPY bash_history /root/.bash_history
