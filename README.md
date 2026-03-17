@@ -8,7 +8,7 @@ for various robotics research and development purposes using [TurboPi ROS](https
 This container contains the initial environment to build and run ROS 2
 simulations using Gazebo and RViz2.
 
-[Docker Hub Tags](https://hub.docker.com/r/wltjr/docker-ros2-jazzy-gz-rviz2-turbopi/tags) - Latest v6
+[Docker Hub Tags](https://hub.docker.com/r/wltjr/docker-ros2-jazzy-gz-rviz2-turbopi/tags) - Latest v7
 
 ## Usage
 
