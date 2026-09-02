@@ -1,4 +1,4 @@
-FROM unfrobotics/docker-ros2-jazzy-gz-rviz2:v7
+FROM unfrobotics/docker-ros2-jazzy-gz-rviz2:v8
 
 # dark theme
 COPY gz/sim/8/gui.config /root/.gz/sim/8/gui.config
